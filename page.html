@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Currículo</title>
+  <link rel="icon" href="favicon.png">
+
+<!--codepen - https://codepen.io/web_designer_sanchit/pen/eLjvyw -->
+
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Rambla|Staatliches&display=swap');
+	
+
+	body
+	{
+		margin: 0;
+		padding: 0;
+		font-family: 'Staatliches', cursive;
+		font-family: 'Rambla', sans-serif;
+    
+	}
+	.titulo
+	{
+		 color: #ffffff;
+		 font-family: 'Staatliches', cursive;
+		 text-align: center;
+		 padding: 30px;
+	}
+	#dados
+	{
+		font-family: 'Staatliches', cursive;
+		line-height: 50px;
+		margin-top: 50px;
+    text-align: center;
+
+	}
+	#dados ul
+	{
+		font-size: 30px;
+		list-style: none;
+	}
+	#dados span
+	{
+		padding-left: 40px;
+	}
+	.subtitulo
+	{
+		margin-top: 50px;
+		font-size: 200;
+		padding-left: 40px;
+	}
+	.subtitulo p
+	{
+		font-family: 'Rambla', sans-serif;
+		margin-top: -10px;
+	}
+	* 
+	{
+  box-sizing: border-box;
+	}
+  :root
+  {
+  --font-staat: 'Staatliches', cursive;
+  }
+  .font-staat
+  {
+  font: normal 400 18px var(--font-staat);
+  }
+  .font-size-34
+  {
+  font-size: 34px;
+  }
+  /* Começa a timeline */
+  .timeline
+  {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 600px;
+  height: 100%;
+  box-sizing:border-box;
+  }
+  .timeline:before
+  {
+    content:'';
+    position:absolute;
+    left:50%;
+    width:2px;
+    height:100%;
+    background:#c5c5c5;
+  }
+  .timeline ul
+  {
+    padding: 0;
+    margin: 0;
+  }
+  .timeline ul li
+  {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing:border-box;
+  }
+  .timeline ul li:nth-child(odd)
+  {
+    float: left;
+    text-align: right;
+    clear:both;
+  }
+  .timeline ul li:nth-child(even)
+  {
+    float: right;
+    text-align: left;
+    clear: both;
+  }
+  .conteudo
+  {
+    padding-bottom: 20px;
+  }
+  .timeline ul li:nth-child(odd):before
+  {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    right: -6px;
+    background: rgba(68,68,68,1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(68,68,68,0.2);
+  }
+  .timeline ul li:nth-child(even):before
+  {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    left: -4px;
+    background: rgba(68,68,68,1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(68,68,68,0.2);
+  }
+  .timeline ul li h3
+  {
+    padding: 0;
+    margin: 0;
+    color: rgba(68,68,68,1);
+    font-weight: 600;
+    font-family: 'Rambla', sans-serif;
+  }
+  .timeline ul li p
+  {
+    margin: 10px 0 0;
+    padding: 0;
+  }
+  .timeline ul li .time h4
+  {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  .timeline ul li:nth-child(odd) .time
+  {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(68,68,68,1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(68,68,68,0.3);
+  }
+  .timeline ul li:nth-child(even) .time
+  {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    padding: 8px 16px;
+    background: rgba(68,68,68,1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(68,68,68,0.3);
+  }
+  @media(max-width: 1000px)
+  {
+    .timeline
+    {
+    width: 100%;
+    }
+  }
+  @media(max-width: 767px)
+  {
+    .timeline
+    {
+      width: 100%;
+      padding-bottom: 0;
+    }
+    h1
+    {
+      font-size: 40px;
+      text-align: center;
+    }
+    .timeline:before
+    {
+      left: 20px;
+      height: 100%;
+    }
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even)
+    {
+      width: 100%;
+      text-align: left;
+      padding-left: 50px;
+      padding-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before
+    {
+      top: -18px;
+      left: 16px;
+    }
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time
+    {
+      top: -30px;
+      left: 50px;
+      right: inherit;
+    }
+  }
+	</style>
+</head>
+<body>
+	<!--<div class="container">-->
+	  <div class="row">
+	    <div class="col-sm bg-dark">
+		  <h1 class="titulo">currículo</h1>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-12 text-muted" id="dados">
+        <!--<div class="d-flex flex-column">-->
+	    	<ul>
+		      <li>Carla Regina Santos Alcantara</li>
+		      <li>Brasileira, casada, 57 anos</li>
+		      <li>Rua Capitão Resende, 521, bl1 - apt 502 - CEP 20780-190</li>
+		      <li>(21) 999585448 - carlaalcantaradesign@gmail.com</li>
+			</ul>
+			<a href="https://www.linkedin.com/in/carla-alcantara-79259537" target="_blank"><i class="fab fa-linkedin-in fa-2x text-muted"></i></a>
+			<div class="subtitulo text-muted">
+				<h4>Objetivo</h4>
+				<p>Design | Webdesign</p>
+			</div>
+			<div class="subtitulo text-muted">
+				<h4>Formação Acadêmica</h4>
+				<p>Comunicação Social | Universidade Gama Filho</p>
+			</div>
+	    </div>
+
+	      <div class="col-12 text-muted">
+	      <div class="timeline">
+          <ul>
+            <li>
+              <div class="conteudo">
+                <h3>Freelancer</h3>
+                <p>Atualmente trabalho com freelancer desenvolvendo websites, blogs, logotipos, mídia social, impressos e outros serviços de comunicação.</p>
+              </div>
+              <div class="time">
+                <h4>Atualmente</h4>
+              </div>
+            </li>
+            <li>
+              <div class="conteudo">
+                <h3>Golmobile</h3>
+                <p>Na função de designer e webdesigner fui responsável pelo app Nuvem do Jornaleiro, onde operacionalizava as funções do app e parceiros.</p>
+              </div>
+              <div class="time">
+                <h4>2010 - 2017</h4>
+              </div>
+            </li>
+            <li>
+              <div class="conteudo">
+                <h3>Casa & Vídeo</h3>
+                <p>Designer no departamento de marketing e produçao gráfica.</p>
+              </div>
+              <div class="time">
+                <h4>2006 - 2008</h4>
+              </div>
+            </li>
+            <li>
+              <div class="conteudo">
+                <h3>Jornal Extra</h3>
+                <p>Na Editoria de arte, criei artes, ilustrações e infográficos para todas as editorias.</p>
+              </div>
+              <div class="time">
+                <h4>1997 - 2003</h4>
+              </div>
+            </li>
+            <li>
+              <div class="conteudo">
+                <h3>Artplan Propaganda</h3>
+                <p>Na função de Direção de Arte, realizei campanhas de propaganda e peças como Logotipo, Naming, Impressos, entre outros.</p>
+              </div>
+              <div class="time">
+                <h4>1985 - 1990</h4>
+              </div>
+            </li>
+            <div style="clear;both;"></div>
+          </ul>
+	      </div>
+	  </div>
+	</div>
+  
+  <!--</div>-->
+	
+
+
+
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+
+</body>
+</html>
